@@ -1,1 +1,1 @@
-# Product-detail-page test
+# Product-detail-page
