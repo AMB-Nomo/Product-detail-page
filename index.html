@@ -143,6 +143,33 @@
 
     /* CSS */
 
+    /* margin  */
+    .mt20 {
+        margin-top: 20px;
+    }
+
+    .mt50 {
+        margin-top: 50px;
+    }
+
+    .mt100 {
+        margin-top: 100px;
+
+    }
+
+    /* width */
+    .w90 {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .w84 {
+        width: 84% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     /* font-size */
 
     .fs_s {}
@@ -168,7 +195,6 @@
     }
 
     .pictorial_img {
-        margin-top: 100px;
         display: flex;
         justify-content: center;
     }
@@ -189,21 +215,69 @@
         color: rgba(0, 121, 255, 1);
         text-shadow: 0px 10px 23px rgba(24, 49, 113, 0.31);
     }
+
+    .pictorial {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .pictorial .pictorial_text {
+        display: block;
+        position: absolute;
+        top: 50px;
+
+    }
+
+    .pictorial .pictorial_text .technology_text {
+        display: flex;
+        font-weight: 600;
+        font-size: 48px;
+        color: #183171;
+        letter-spacing: -3px;
+    }
+
+    .gradient-div {
+        background: linear-gradient(to right, rgba(95, 157, 255, 0.1), rgba(95, 157, 255, 1), rgba(95, 157, 255, 0.1));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+    }
 </style>
 
 <div class="solution">
     <div class="gradient_tittle"></div>
-    <div class="pictorial">
-        <div class="pictorial_img">
+    <div class="pictorial mt100">
+        <div class="pictorial_img w90">
             <img src="./img/solution_des.png">
         </div>
     </div>
-    <div class="solution_tittle">
+    <div class="solution_tittle w90">
         <p><span class="fs_m fc_solution">진짜로 중요한 것은</span>
             <br>두피 침투력 과 지속력
         </p>
     </div>
     <div class="solution_arr">
         <img src="./img/solution_arr.png">
+    </div>
+</div>
+<div class="technology">
+    <div class="pictorial mt50">
+        <div class="pictorial_img">
+            <img src="./img/technology.png">
+        </div>
+        <div class="pictorial_text">
+            <p class="technology_text">나노그래핀 DDS</p>
+        </div>
+        <div class="gradient-div w84">
+            <p style="display: flex;font-size: 40px; line-height: 69px; font-weight: 600;padding: 30px;gap:10px">탈모 케어 핵심 성분 “카페인” 을 
+                <br>두피 속으로 전달하는 매개 물질
+            </p>
+        </div>
     </div>
 </div>
