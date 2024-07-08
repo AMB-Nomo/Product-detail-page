@@ -157,10 +157,24 @@
         margin-top: 100px;
 
     }
-    .center{
+
+    .mb20 {
+        margin-bottom: 20px;
+    }
+
+    .mb50 {
+        margin-bottom: 50px;
+    }
+
+    .mb100 {
+        margin-bottom: 100px;
+    }
+
+    .center {
         align-items: center;
         display: flex;
     }
+
     /* width */
     .w90 {
         width: 90% !important;
@@ -320,6 +334,35 @@
         background: #1CC555;
         padding: 0px 35px 0px 35px;
     }
+
+    .ingredients {}
+
+    .ingred_tittle {
+        background: linear-gradient(to bottom, #252C4F, #0079FF);
+        font-size: 45px;
+        display: flex;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .ingred_text {
+        background: linear-gradient(to bottom, #C9DEFF, #FFFFFF);
+        font-size: 34px;
+        padding: 30px 50px 30px 50px;
+        text-align: center;
+        color: #183171;
+        gap: 10px;
+    }
+
+    .level_1 {
+        background-color: #125BCD 37%;
+    }
+
+    .level{
+        font-size: 60px;
+        font-weight: 600;
+        display: flex;
+    }
 </style>
 
 <div class="solution">
@@ -363,9 +406,32 @@
             <span class="fs_s fw600">DDS</span>(Drug Delivery System) Technology가
         </p>
     </div>
-    <div class="center mt50">
-        <p class="fs_s fw700" style="color: #2D3B78;">
+    <div class="center">
+        <p class="fs_s fw700 mt50 mb50" style="color: #2D3B78;">
             답이다.
         </p>
+    </div>
+</div>
+<div class="ingredients">
+    <div class="ingred_tittle fc_white fw600">
+        <p>
+            탈모 케어 성분
+        </p>
+        <img src="./img/icon_dds.png">
+        <p>
+            나노 그래핀
+        </p>
+    </div>
+    <div class="ingred_text fw500">
+        <p>
+            약물 전달 시스템 (DDS) 매개 물질인
+            <br>나노 그래핀이 특허 받은 “카페인＂성분 등과
+        </p>
+    </div>
+    <div class="level">
+        <div class="level_1">
+            <p>착</p>
+            <!-- <div>달라 붙어서</div> -->
+        </div>
     </div>
 </div>
