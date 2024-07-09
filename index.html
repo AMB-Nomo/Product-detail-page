@@ -194,6 +194,9 @@
         font-size: 48px;
     }
 
+    .fs_ss {
+        font-size: 40px;
+    }
 
     .fs_m {
         font-size: 70px;
@@ -335,7 +338,13 @@
         padding: 0px 35px 0px 35px;
     }
 
-    .ingredients {}
+    .ingredients {
+        display: flow-root;
+    }
+
+    .ingredients2 {
+        background-color: #F8F8F8;
+    }
 
     .ingred_tittle {
         background: linear-gradient(to bottom, #252C4F, #0079FF);
@@ -343,6 +352,17 @@
         display: flex;
         padding: 30px;
         gap: 20px;
+    }
+
+    .ingred_tittle2 {
+        background-color: #FFF;
+        color: #125BCD;
+        padding: 30px;
+        gap: 20px;
+        font-size: 45px;
+        font-weight: 600;
+        display: grid;
+        border: 1px solid #5F9DFF;
     }
 
     .ingred_text {
@@ -355,13 +375,38 @@
     }
 
     .level_1 {
-        background-color: #125BCD 37%;
+        display: flex;
+        background-color: #125BCD;
+        gap: 20px;
+        box-shadow: 0px 14px 14px rgba(18, 91, 205, 0.37);
     }
 
-    .level{
+    .level_2 {
+        display: flex;
+        background-color: #3F87F8;
+        gap: 20px;
+        box-shadow: 0px 14px 14px rgba(18, 91, 205, 0.26);
+    }
+
+    .level_3 {
+        display: flex;
+        background-color: #87B6FF;
+        gap: 20px;
+        box-shadow: 0px 14px 14px rgba(18, 91, 205, 0.16);
+    }
+
+    .level {
+        display: grid;
+    }
+
+    .level div {
+        margin-top: 20px;
         font-size: 60px;
         font-weight: 600;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding: 20px 50px 20px 50px;
+        align-items: center;
     }
 </style>
 
@@ -428,10 +473,29 @@
             <br>나노 그래핀이 특허 받은 “카페인＂성분 등과
         </p>
     </div>
-    <div class="level">
+    <div class="level fc_white mt50 mb100">
         <div class="level_1">
             <p>착</p>
-            <!-- <div>달라 붙어서</div> -->
+            <p class="fs_ss fw400">달라 붙어서</p>
         </div>
+        <div class="level_2">
+            <p>쏙</p>
+            <p class="fs_ss fw400">들어가고</p>
+        </div>
+        <div class="level_3">
+            <p>확</p>
+            <p class="fs_ss fw400">퍼진다</p>
+        </div>
+    </div>
+</div>
+<div class="ingredients2">
+    <div class="ingred_tittle2 mt50">
+        <p>
+            탈모 케어 성분
+        </p>
+        <img src="./img/icon_dds_1.png">
+        <p>
+            나노 그래핀
+        </p>
     </div>
 </div>
