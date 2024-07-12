@@ -233,6 +233,14 @@
     .fc_black {
         color: #000;
     }
+    .fc_main{
+        color: #183171;
+    }
+
+    .bg_blue {
+        background-color: #4995E9;
+    }
+
 
     .gradient_tittle {
         height: 20px;
@@ -424,6 +432,32 @@
         padding: 20px 50px 20px 50px;
         align-items: center;
     }
+
+    .contains_1 {
+        display: flex;
+        flex-direction: row;
+        padding: 5% 0;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .contains_1 div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .contains_1 p {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .contains_1 p+p {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -2.5px;
+    }
 </style>
 
 <div class="solution">
@@ -520,18 +554,74 @@
         약물 전달 시스템 <span class="fw600">(DDS)</span> 매개 물질인
         <br>나노 그래핀이 특허 받은 “카페인＂성분 등과
     </p>
-    <div class="level fc_white">
-        <div class="level_1">
-            <p>FAST</p>
-            <p class="fs_ss fw400">빠르게 두피 속으로 침투</p>
+    <div class="pictorial">
+        <div class="pictorial_img mt50 mb50">
+            <img src="./img/tag_dds.png">
         </div>
-        <div class="level_2">
-            <p>INCREASE</p>
-            <p class="fs_ss fw400">두피 흡수율이 높아짐</p>
+    </div>
+</div>
+<div class="pictorial">
+    <div class="pictorial_img">
+        <img src="./img/video.png">
+    </div>
+</div>
+<div class="pictorial">
+    <div class="pictorial_img">
+        <img src="./img/img1.png">
+    </div>
+</div>
+<div class="contains_1 fc_main">
+    <div>
+        <div class="pictorial">
+            <div class="pictorial_img">
+                <img src="./img/img_box_1.png">
+            </div>
         </div>
-        <div class="level_3">
-            <p>LONG</p>
-            <p class="fs_ss fw400">오래 지속적으로 남아 있음</p>
+        <p>
+            아깝게 흘려보냈던 탈모케어
+            <br>영양성분…
+        </p>
+        <p>
+            약물 전달 매개 물
+            <br>질 나노그래핀으로
+            <br>착쏙확 하세요
+        </p>
+    </div>
+    <div class="pictorial">
+        <div class="pictorial_img">
+            <img src="./img/prd_cont_1.png">
         </div>
+    </div>
+</div>
+<div class="contains_1 bg_blue fc_white">
+    <div class="fc_white">
+        <div class="pictorial">
+            <div class="pictorial_img">
+                <img src="./img/img_box_2.png">
+            </div>
+        </div>
+        <p>
+            2분이 지난 후 세척해야
+            <br>효과 만점
+        </p>
+        <p>
+            “모드림 그래핀”
+            <br>착쏙확 샴푸
+        </p>
+    </div>
+    <div class="pictorial">
+        <div class="pictorial_img">
+            <img src="./img/prd_cont_2.png">
+        </div>
+    </div>
+</div>
+<div class="pictorial">
+    <div class="pictorial_img">
+        <img src="./img/img2.png">
+    </div>
+</div>
+<div class="pictorial">
+    <div class="pictorial_img">
+        <img src="./img/bg_img3.png">
     </div>
 </div>
