@@ -208,6 +208,11 @@
 
     /* font-size */
 
+    .fs_30 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
     .fs_s {
         font-size: 48px;
     }
@@ -304,6 +309,10 @@
         color: #4467ff;
     }
 
+    .fc_main3 {
+        color: #2D3B78;
+    }
+
     .gradient_tittle {
         height: 20px;
         background: linear-gradient(to right, #183171, #0079FF);
@@ -318,6 +327,8 @@
     .pictorial_img {
         display: flex;
         justify-content: center;
+        align-items: end;
+        object-fit: cover;
     }
 
     .pictorial .pictorial_text {
@@ -350,6 +361,17 @@
 
     .solution_tittle p {
         font-size: 82
+    }
+
+    .fs_note {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .fs_note2 {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -1.5px;
     }
 
     .fs_m {
@@ -464,6 +486,17 @@
     .pictorial_contents {
         position: absolute;
         gap: 80px;
+    }
+
+    .pictorial_contents.ph {
+        position: absolute;
+        gap: 30px;
+        padding: 30px;
+        color: #7B7B7B;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: rgba(255,255,255,0.6);
+        backdrop-filter: blur(4px);
     }
 
     .solution_arr {
@@ -661,9 +694,16 @@
     .kaist img {
         padding: 30px;
     }
-    .unique{
+
+    .unique {
         padding: 10% 5% 10% 5%;
-    
+
+    }
+
+    .info_prd {
+        padding: 10% 5% 10% 5%;
+        gap: 20px;
+
     }
 </style>
 
@@ -709,7 +749,7 @@
         </p>
     </div>
     <div class="center">
-        <p class="fs_s fw700 mt50 mb50" style="color: #2D3B78;">
+        <p class="fs_s fw700 mt50 mb50 fc_main3">
             답이다.
         </p>
     </div>
@@ -861,5 +901,58 @@
 <div class="pictorial unique" style="background-color: #4D76BA;">
     <div class="pictorial_img">
         <img src="./img/unique.png">
+    </div>
+</div>
+<div class="pictorial row info_prd" style="background-color: #E2EBF9;">
+    <div class="pictorial_img">
+        <img src="./img/prd_cont_1.png">
+    </div>
+    <div>
+        <p class="fs_xs ls_m2 l_s fw600 fc_main3 center mb20">
+            모드림 그래핀 샴푸의 특허 받은
+            <br>탈모 케어 성분
+        </p>
+        <div class="pictorial_img">
+            <img src="./img/info_prd.png">
+        </div>
+    </div>
+</div>
+<div class="pictorial info_prd column center fc_white" style="background-color: #93A9CC;">
+    <div class="row">
+        <div class="pictorial_img">
+            <img src="./img/prd_cont_2.png">
+        </div>
+        <div>
+            <p class="fs_xs ls_m2 l_s fw600 fc_white center mb20" style="font-size: 22px;">
+                모드림 그래핀 샴푸만의 특허 받은 카페인 성분
+            </p>
+            <div class="pictorial_img">
+                <img src="./img/certificate.png">
+            </div>
+        </div>
+    </div>
+    <p class="fs_note ls_m1">
+        카페인을 이중층 구조의 양이온성을 갖는 양이온/음이온 계면활성제 혼합 베시클 내로 포집시킴으로써 이를 함유하는 모발용
+        <br>조성물이 두피 자극은 없으면서 탈모 완화 및 모발 성장 효과를 증진하는 것을 발견하고 본 발명을 특허로 인증 받음.
+    </p>
+    <p class="fs_note2">
+        따라서 본 발명의 목적은 탈모 완화 및 모발 성장을 위한 모발용 조성물을 제공하는 것이다.
+    </p>
+</div>
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/bg_img4.png">
+    </div>
+    <div class="pictorial_contents column ph">
+        <p class="fs_30 fc_black">
+            모드림 그래핀 샴푸는 <span class="fc_main2">pH6의 약산성</span>
+            <br>저자극 모발 보호 샴푸
+        </p>
+        <p>
+            외부 요인과 스트레스, 잦은 시술로 알칼리화되어 있는 모발과
+            <br>두피를 pH5~6도의 약산성 상태로 유지해 주는 저자극 모발 보
+            <br>호 샴푸이기 때문에 손상된 모발이나 민감한 피부에도 자극없
+            <br>이 사용할 수 있습니다.
+        </p>
     </div>
 </div>
