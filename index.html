@@ -173,6 +173,24 @@
     .center {
         align-items: center;
         display: flex;
+        text-align: center;
+    }
+
+    .td {
+        text-align: center;
+    }
+
+    /* padding */
+    .p1 {
+        padding: 10px;
+    }
+
+    .p2 {
+        padding: 20px;
+    }
+
+    .p3 {
+        padding: 30px;
     }
 
     /* width */
@@ -198,9 +216,28 @@
         font-size: 40px;
     }
 
+    .fs_sm {
+        font-size: 60px;
+    }
+
     .fs_m {
         font-size: 70px;
-        font-weight: 500;
+    }
+
+    .fs_l {
+        font-size: 100px;
+    }
+
+    .fs_xl {
+        font-size: 120px;
+    }
+
+    .fs_xxl {
+        font-size: 150px;
+    }
+
+    .fs_xxxl {
+        font-size: 200px;
     }
 
     /* font-weight */
@@ -220,6 +257,19 @@
         font-weight: 700;
     }
 
+    /* letter-spacing */
+    .ls_m1 {
+        letter-spacing: -1.5px;
+    }
+
+    .ls_m2 {
+        letter-spacing: -2.5px;
+    }
+
+    .ls_m3 {
+        letter-spacing: -3.5px;
+    }
+
     /* color */
 
     .fc_solution {
@@ -233,14 +283,26 @@
     .fc_black {
         color: #000;
     }
-    .fc_main{
+
+    .fc_main {
         color: #183171;
+    }
+
+    .fc_main1 {
+        color: #125BCD;
     }
 
     .bg_blue {
         background-color: #4995E9;
     }
 
+    .bg_white {
+        background-color: #fff;
+    }
+
+    .fc_main2 {
+        color: #4467ff;
+    }
 
     .gradient_tittle {
         height: 20px;
@@ -248,12 +310,160 @@
     }
 
     .pictorial {
+        display: flex;
         position: relative;
+        justify-content: center;
     }
 
     .pictorial_img {
         display: flex;
         justify-content: center;
+    }
+
+    .pictorial .pictorial_text {
+        display: block;
+        position: absolute;
+        top: 50px;
+
+    }
+
+    .pictorial_des {
+        display: block;
+        position: absolute;
+        top: 50px;
+        padding: 0 50px;
+        line-height: 40px;
+        letter-spacing: -2.5px;
+        color: #2D3B78;
+    }
+
+    .pictorial_des span {
+        font-size: 36px;
+        color: #4467ff;
+    }
+
+    .solution_arr {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .solution_tittle p {
+        font-size: 82
+    }
+
+    .fs_m {
+        font-size: 70px;
+    }
+
+    .fs_xs {
+        font-size: 24px;
+    }
+
+    /* line-height */
+    .l_ss {
+        line-height: 45px;
+    }
+
+    /* font-weight */
+    .fw400 {
+        font-weight: 400;
+    }
+
+    .fw500 {
+        font-weight: 500;
+    }
+
+    .fw600 {
+        font-weight: 600;
+    }
+
+    .fw700 {
+        font-weight: 700;
+    }
+
+    /* flex */
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* color */
+
+    .fc_solution {
+        color: rgba(45, 59, 120, 1);
+    }
+
+    .fc_white {
+        color: #fff;
+    }
+
+    .fc_black {
+        color: #000;
+    }
+
+    .fc_main {
+        color: #183171;
+    }
+
+    .fc_main1 {
+        color: #125BCD;
+    }
+
+    .bg_blue {
+        background-color: #4995E9;
+    }
+
+    .fc_main2 {
+        color: #4467ff;
+    }
+
+    .gradient_tittle {
+        height: 20px;
+        background: linear-gradient(to right, #183171, #0079FF);
+    }
+
+    .pictorial {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .pictorial_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pictorial .pictorial_text {
+        display: block;
+        position: absolute;
+        top: 50px;
+
+    }
+
+    .pictorial_des {
+        display: block;
+        position: absolute;
+        top: 50px;
+        padding: 0 50px;
+        line-height: 90px;
+        letter-spacing: -2.5px;
+        color: #2D3B78;
+    }
+
+    .pictorial_des span {
+        font-size: 36px;
+        color: #4467ff;
+    }
+
+    .pictorial_contents {
+        position: absolute;
+        gap: 80px;
     }
 
     .solution_arr {
@@ -273,19 +483,6 @@
         text-shadow: 0px 10px 23px rgba(24, 49, 113, 0.31);
     }
 
-    .pictorial {
-        display: flex;
-        position: relative;
-        justify-content: center;
-    }
-
-    .pictorial .pictorial_text {
-        display: block;
-        position: absolute;
-        top: 50px;
-
-    }
-
     .pictorial .pictorial_text .technology_text {
         display: flex;
         font-weight: 600;
@@ -300,7 +497,6 @@
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 24px;
         font-weight: bold;
         position: absolute;
         bottom: 0;
@@ -321,7 +517,6 @@
         font-size: 60px;
         font-weight: 700;
         letter-spacing: 1px;
-        color: #125BCD;
     }
 
     .pictorial_text_3 {
@@ -372,7 +567,6 @@
     }
 
     .ingred_tittle2 {
-        color: #125BCD;
         font-size: 45px;
         font-weight: 600;
         display: grid;
@@ -436,8 +630,8 @@
     .contains_1 {
         display: flex;
         flex-direction: row;
-        padding: 5% 0;
-        justify-content: space-evenly;
+        padding: 10% 5% 10% 10%;
+        justify-content: space-between;
         gap: 20px;
     }
 
@@ -458,6 +652,19 @@
         font-weight: 700;
         letter-spacing: -2.5px;
     }
+
+    .kaist {
+        gap: 30px;
+    }
+
+    .kaist p,
+    .kaist img {
+        padding: 30px;
+    }
+    .unique{
+        padding: 10% 5% 10% 5%;
+    
+    }
 </style>
 
 <div class="solution">
@@ -467,8 +674,8 @@
             <img src="./img/solution_des.png">
         </div>
     </div>
-    <div class="solution_tittle w90">
-        <p><span class="fs_m fc_solution">진짜로 중요한 것은</span>
+    <div class="solution_tittle fw600 w90">
+        <p><span class="fs_m fw500 fc_solution">진짜로 중요한 것은</span>
             <br>두피 침투력 과 지속력
         </p>
     </div>
@@ -484,7 +691,7 @@
         <div class="pictorial_text">
             <p class="technology_text">나노그래핀 DDS</p>
         </div>
-        <div class="gradient-div w84">
+        <div class="gradient-div fs_ss w84">
             <p class="pictorial_text_1">탈모 케어
                 핵심 성분 “카페인” 을
                 <br>두피 속으로 전달하는 매개 물질
@@ -492,7 +699,7 @@
         </div>
     </div>
     <div class="nano_G w84">
-        <p class="pictorial_text_2">
+        <p class="pictorial_text_2 fc_main1">
             “Nano Graphene” 과
         </p>
     </div>
@@ -508,7 +715,7 @@
     </div>
 </div>
 <div class="ingredients">
-    <div class="ingred_tittle fc_white fw600">
+    <div class="ingred_tittle  fc_white fw600">
         <p>
             탈모 케어 성분
         </p>
@@ -539,7 +746,7 @@
     </div>
 </div>
 <div class="ingredients2">
-    <div class="ingred_tittle2">
+    <div class="ingred_tittle2 fc_main1">
         <div class="mt100">
             <p>
                 탈모 케어 성분
@@ -619,9 +826,40 @@
     <div class="pictorial_img">
         <img src="./img/img2.png">
     </div>
+    <div class="pictorial_des fw700 center">
+        <p class="fs_xs l_ss">
+            특허 받은 탈모케어 성분이 약물전달 매개물질 나노그래핀과 만나
+            <br><span>착</span> 달라붙어서 <span>쏙</span> 들어가고 <span>확</span> 퍼진다
+        </p>
+        <p class="fs_sm" style="color:#252C4F;">
+            모드림 그래핀 샴푸
+        </p>
+    </div>
 </div>
-<div class="pictorial">
+<div class="pictoria center" style="background-color: #183171">
     <div class="pictorial_img">
         <img src="./img/bg_img3.png">
+    </div>
+    <div class="pictorial_contents fw700 center column fs_ss ls_m2 l_ss">
+        <p class="fc_white">
+            탈모 방지를 위해 두피 의학과 그래핀 테크의
+            <br>최고 권위자가 힘을 합쳤다.
+        </p>
+        <div class="row kaist">
+            <p class="bg_white">
+                두피 케어 전문
+                <br>강남 <span class="fc_main2">**피부과</span>
+            </p>
+            <div class="pictorial">
+                <div class="pictorial_img bg_white">
+                    <img src="./img/kaist.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pictorial unique" style="background-color: #4D76BA;">
+    <div class="pictorial_img">
+        <img src="./img/unique.png">
     </div>
 </div>
