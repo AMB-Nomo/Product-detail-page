@@ -326,8 +326,8 @@
 
     .pictorial_img {
         display: flex;
-        justify-content: center;
-        align-items: end;
+        justify-content: end;
+        /* align-items: end; */
         object-fit: cover;
     }
 
@@ -339,7 +339,21 @@
     }
 
     .pictorial.more {
-        padding: 100px;
+        padding: 100px 70px;
+        background-color: #E9E9E9;
+    }
+
+    .pictorial.more2 {
+        padding: 100px 70px;
+        background-color: #2D3B78;
+    }
+
+    .more .pictorial_img img {
+        max-width: 85%;
+    }
+
+    .more2 .pictorial_img img {
+        max-width: 85%;
     }
 
     .pictorial_des {
@@ -392,19 +406,19 @@
 
     /* font-weight */
     .fw400 {
-        font-weight: 400;
+        font-weight: 400 !important;
     }
 
     .fw500 {
-        font-weight: 500;
+        font-weight: 500 !important;
     }
 
     .fw600 {
-        font-weight: 600;
+        font-weight: 600 !important;
     }
 
     .fw700 {
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 
     /* flex */
@@ -459,10 +473,6 @@
         justify-content: center;
     }
 
-    .pictorial_img {
-        display: flex;
-        justify-content: center;
-    }
 
     .pictorial .pictorial_text {
         display: block;
@@ -500,6 +510,17 @@
         font-weight: 500;
         background-color: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(4px);
+    }
+
+    .pictorial_contents.dds {
+        position: absolute;
+        width: 550px;
+        gap: 20px;
+        padding: 20px;
+        color: #000;
+        font-size: 26px;
+        font-weight: 600;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     .solution_arr {
@@ -709,6 +730,13 @@
 
     }
 
+    .info {
+        width: 450px;
+        gap: 30px;
+        background-color: #fff;
+        padding: 30px;
+    }
+
     .info_tittle {
         font-weight: 600;
         font-size: 20px;
@@ -716,14 +744,86 @@
     }
 
     .info_box {
+        height: 80px;
+        width: 370px;
         background-color: #125BCD;
         font-size: 24px;
         font-weight: 700;
         color: #fff;
-        padding: 20px;
-        letter-spacing: -2.5px;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(45, 59, 120, 0.31);
+        display: flex;
+        align-items: center;
+        /* letter-spacing: -2.5px;  */
     }
 
+    .info_box p {}
+
+    .info_text {
+        line-height: 25px;
+    }
+
+    .info_text.row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info_text.row p {
+        display: flex;
+        justify-content: left;
+    }
+
+    .info_text.row p+p {
+        font-size: 17px;
+        font-weight: 600;
+        color: #252C4F;
+        box-sizing: border-box;
+    }
+
+    .gradual-line {
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(to right, #ffffff, #125BCD, #ffffff);
+        align-items: center;
+    }
+
+    .text_cus {
+        margin: 0 auto;
+        letter-spacing: -1px;
+        text-align: justify;
+        font-size: 19px;
+        display: flex;
+    }
+
+    .dds_text {
+        background-color: #fff;
+        text-align: left;
+        padding: 10px;
+        gap: 10px;
+        line-height: 30px;
+        border-radius: 1px;
+    }
+
+    .goods_cont {
+        width: 100%;
+        /* margin: 70px auto 0; */
+        text-align: left;
+    }
+
+    .goods_cont li {
+        position: relative;
+        font-size: 14px;
+        margin: 0 20px;
+        line-height: 2;
+    }
+
+    .goods_cont li:before {
+        /* content: '·'; */
+        position: absolute;
+        left: -15px;
+        top: 0;
+        font-weight: 700;
+    }
 </style>
 
 <div class="solution">
@@ -996,36 +1096,170 @@
         <img src="./img/video.png">
     </div>
 </div>
-<div class="pictorial more center" style="color: #E9E9E9;">
+<div class="pictorial more center">
     <div class="pictorial_img">
         <img src="./img/prd_cont_1.png">
     </div>
     <div class="info column fw700">
-        <p class="info_tittle">
+        <p class="info_tittle ls_m1">
             모드림 그래핀 샴푸의 탈모 케어 효과
         </p>
         <div class="info_box">
-            둘, <span class="fs_ss">“쏙확”</span> <span style="font-size: 20px;">두피 속으로 침투, 확산</span>
+            <p>
+                하나, <span class="fs_ss">“착”</span> <span style="font-size: 20px;"> 유효 성분과 밀착</span>
+            </p>
+        </div>
+        <p class="info_text fs_note fc_black fw500">
+            모드림 그래핀 샴푸에 적용된
+            <br>나노그래핀 기술은 <span class="fw600">13</span>나노미터 수준으로
+            <br>기존 리포좀 기술보다 약 <span class="fw600">20</span>배 작은 초미세 크기로
+            <br>탈모케어 핵심 성분에 밀착, 유익 성분을 최대한
+            <br>유지하면서 두피에 촘촘하고 깊이 흡수되는
+            <br>효과가 있습니다.
+        </p>
+    </div>
+</div>
+<div class="pictorial more2 center">
+    <div class="pictorial_img">
+        <img src="./img/prd_cont_1.png">
+    </div>
+    <div class="info column fs_note fc_black fw700">
+        <p class="info_tittle ls_m1">
+            모드림 그래핀 샴푸의 탈모 케어 효과
+        </p>
+        <div class="info_box ls_m2">
+            <p>
+                둘, <span class="fs_ss"> “쏙확”</span> <span style="font-size: 20px;"> 두피 속으로 침투, 확산</span>
+            </p>
+        </div>
+        <p class="info_text fw500">
+            모드림 그래핀 샴푸에 적용된
+            <br>그래핀 <span class="fw600" style="color: #0079FF;">DDS(Drug Delivery System)</span> 기술은
+            <br>탈모 케어에 좋은 성분들과 밀착한 상태로
+            <br>물에 잘 녹지 않는 소수성 생체 활성 성분을
+            <br>그래핀 표면에 흡착시켜 전달시키는 방법입니다.
+        </p>
+        <div class="gradual-line"></div>
+        <p class="info_text fw500 ls" style="letter-spacing: -1px;">
+            생체 활성 성분을 지닌 그래핀은 생체 적합성
+            <br>천연 고분자 등과 유도체를 형성하여 물에 잘 용해 될 수 있고
+            <br><span class="fw600">GO-PEG</span> 복합재의 소수성 부분에 물리적으로 흡착되어 탈모 케어에
+            <br>유효한 성분을 두피/모낭에 깊이 흡수되고 확산하게 됩니다.
+        </p>
+    </div>
+</div>
+<div class="pictorial more center">
+    <div class="pictorial_img">
+        <img src="./img/prd_cont_1.png">
+    </div>
+    <div class="info column fs_note fc_black  fw700">
+        <p class="info_tittle ls_m1">
+            모드림 그래핀 샴푸의 탈모 케어 효과
+        </p>
+        <div class="info_box ls_m1" style="font-size: 32px;">
+            <p>셋,<span style="font-size: 22px;"> 99.9% 항균력으로 착쏙확 극대화</span></p>
+        </div>
+        <p class="info_text fw500">
+            그래핀옥사이드 자체의 완벽한 항균력으로
+            <br>께끗하고 건강한 두피를 유지합니다.
+        </p>
+        <div class="gradual-line"></div>
+        <p class="info_text fw500">
+            세균이 득실한 각질, 비듬,
+            <br>하루 종일 오염된 피지를 깨끗이 씻어내고
+            <br>피부 장벽 및 보습막을 형성해서
+            <br>건강하고 깨끗한 두피를 오래 유지하고
+            <br>튼튼한 모낭으로 변화합니다.
+        </p>
+    </div>
+</div>
+<div class="pictorial more2 center">
+    <div class="pictorial_img">
+        <img src="./img/prd_cont_1.png">
+    </div>
+    <div class="info column  fs_note fc_black fw700">
+        <p class="info_tittle ls_m1">
+            모드림 그래핀 샴푸의 탈모 케어 효과
+        </p>
+        <div class="info_box">
+            <p>
+                <span style="font-size: 32px;">넷,</span> 모발 손상 개선
+            </p>
+        </div>
+        <p class="info_text fw500">
+            그래핀의 뛰어난 강도와 전도성으로
+        </p>
+        <div class="gradual-line"></div>
+        <div class="text_cus">
+            <div class="goods_cont info_text fw500" style="align-items: center;">
+                <li>큐티클 손상 개선</li>
+                <li>모발 윤기와 탄력 향상</li>
+                <li>모발을 보호하는 코팅막 형성</li>
+                <li>수분과 영양분을 오래 유지</li>
+            </div>
+        </div>
+        <div class="gradual-line"></div>
+        <p class="info_text fw500">
+            하는 추가 효과를 누리실 수 있습니다.
+        </p>
+    </div>
+</div>
+<div class="pictorial more center">
+    <div class="pictorial_img">
+        <img src="./img/prd_cont_1.png">
+    </div>
+    <div class="info column fs_note fc_black  fw700">
+        <p class="info_tittle ls_m1">
+            모드림 그래핀 샴푸의
+            <br>약물전달 매개물질 “나노 그래핀” 의 특성
+        </p>
+        <div class="info_text fw500 row">
+            <p>전자 이동도</p>
+            <p>실리콘 100배</p>
+        </div>
+        <div class="gradual-line"></div>
+        <div class="info_text fw500 row">
+            <p>허용 전류밀도</p>
+            <p>COPPER 100배</p>
+        </div>
+        <div class="gradual-line"></div>
+        <div class="info_text fw500 row">
+            <p>우수한 광학특성</p>
+            <p>투과도 97.7%</p>
+        </div>
+        <div class="gradual-line"></div>
+        <div class="info_text fw500 row">
+            <p>우수한 기계적 특성</p>
+            <p>Diamond 보다 우수</p>
+        </div>
+        <div class="gradual-line"></div>
+        <div class="info_text fw500 row">
+            <p>우수한 유연성</p>
+            <p>ITO보다 12배 우수</p>
+        </div>
+        <div class="gradual-line"></div>
+        <div class="info_text fw500 row">
+            <p>우수한 열전도</p>
+            <p>Cu보다 13배 우수</p>
         </div>
     </div>
 </div>
-<div class="pictorial more center" style="background-color: #2D3B78;">
+<div class="pictorial center">
     <div class="pictorial_img">
-        <img src="./img/prd_cont_1.png">
+        <img src="./img/bg_img5.png">
     </div>
-</div>
-<div class="pictorial more center" style="color: #E9E9E9;">
-    <div class="pictorial_img">
-        <img src="./img/prd_cont_1.png">
-    </div>
-</div>
-<div class="pictorial more center" style="background-color: #2D3B78;">
-    <div class="pictorial_img">
-        <img src="./img/prd_cont_1.png">
-    </div>
-</div>
-<div class="pictorial more center" style="color: #E9E9E9;">
-    <div class="pictorial_img">
-        <img src="./img/prd_cont_1.png">
+    <div class="pictorial_contents column dds">
+        <p class="fc_main1">
+            약물전달 매개물질 “Nano Graphene”
+            <br>DDS (Drug Delivery System) Tech.
+        </p>
+        <p class="fs_note2">
+            생체적합성과 전기전도성으로 줄기세포 배양과 분화연구에 이용
+        </p>
+        <div class="fs_note dds_text goods_cont">
+            <li>생물의학 응용 분야에 적용</li>
+            <li>작은 입자 크기와 우수한 분산성, 입자 자체의 낮은 독성</li>
+            <li>혈액과의 친화성으로 생체 적합성이 우수</li>
+        </div>
     </div>
 </div>
