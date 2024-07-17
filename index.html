@@ -144,6 +144,14 @@
 
     /* CSS */
 
+    .pc {
+        display: none;
+    }
+
+    .mo {
+        display: none;
+    }
+
     /* margin  */
     .mt20 {
         margin-top: 20px;
@@ -366,11 +374,6 @@
         color: #2D3B78;
     }
 
-    .pictorial_des span {
-        font-size: 36px;
-        color: #4467ff;
-    }
-
     .solution_arr {
         margin-top: 20px;
         display: flex;
@@ -460,6 +463,24 @@
 
     .fc_main2 {
         color: #4467ff;
+    }
+
+    /* back_ground */
+    .bg01 {
+        background-image: linear-gradient(to bottom, #D7DBDE, #fff);
+
+    }
+
+    .bg02 {
+        background: #2D3B78;
+        padding: 40px 10px 20px 10px;
+        gap: 30px
+    }
+
+    .bg03 {
+        background: #FFF;
+        padding: 40px 10px 20px 10px;
+        gap: 30px
     }
 
     .gradient_tittle {
@@ -823,6 +844,54 @@
         left: -15px;
         top: 0;
         font-weight: 700;
+    }
+
+    .gird1 {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 20px;
+    }
+
+    .gird2 {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+
+    .gird1 .pictorial_img,
+    .gird2 .pictorial_img {
+        width: 230px;
+        height: 300px;
+    }
+
+    .pictorial.bg01 {
+        padding: 50px;
+        gap: 40px;
+    }
+
+    .label {
+        font-size: 16px;
+        color: #5F9DFF;
+        background-image: linear-gradient(to left, #ffffff00,
+                #ffffff, #ffffff00);
+        gap: 10px;
+        padding: 5px 100px;
+        bottom: 0;
+    }
+
+    .skin_title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2D3B78;
+        letter-spacing: -2.5px;
+    }
+
+    .skin_text {
+        font-size: 20px;
+        font-weight: 500;
+        color: #252C4F;
+        letter-spacing: -2.5px;
+
     }
 </style>
 
@@ -1261,5 +1330,92 @@
             <li>작은 입자 크기와 우수한 분산성, 입자 자체의 낮은 독성</li>
             <li>혈액과의 친화성으로 생체 적합성이 우수</li>
         </div>
+    </div>
+</div>
+<!-- <div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/bg_img6.png">
+    </div>
+</div> -->
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/img7.png">
+    </div>
+    <div class="pictorial_contents label">
+        <p>
+            <span class="fw700">ISO</span> 인증된 철저한 품질관리
+        </p>
+    </div>
+</div>
+<div class="pictorial bg01 center column">
+    <div class="gird1">
+        <div class="pictorial_img">
+            <img src="./img/certificate1.png">
+        </div>
+        <div class="pictorial_img">
+            <img src="./img/certificate2.png">
+        </div>
+        <div class="pictorial_img">
+            <img src="./img/certificate3.png">
+        </div>
+    </div>
+    <div class="gird2">
+        <div class="pictorial_img">
+            <img src="./img/certificate4.png">
+        </div>
+        <div class="pictorial_img">
+            <img src="./img/certificate5.png">
+        </div>
+    </div>
+
+</div>
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/img9.png">
+    </div>
+</div>
+<div class="pictorial bg02 center column fc_white">
+    <div class="ls_m2">
+        <p class="fs_ss ">
+            <span class="fw700 fs_s">착쏙확</span> 효과를 위한 올바른 샴푸 방법
+        </p>
+        <p class="fs_xs ">
+            머리는 밤에 감으면 훨씬 좋아요 !!
+        </p>
+    </div>
+    <div class="pictorial_img">
+        <img src="./img/step.png">
+    </div>
+</div>
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/img11.png">
+    </div>
+</div>
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/img12.png">
+    </div>
+</div>
+<div class="pictorial bg03 center column fc_white">
+    <p class="skin_title">
+        제품정보
+    </p>
+    <p class="skin_text">
+        본 제품에 이상이 있을 경우 공정거래위원회 고시 소비자 분쟁 해결 기준에
+        <br>의거 보상해 드립니다.
+    </p>
+    <div class="pictorial_img">
+        <img src="./img/skin.png">
+    </div>
+</div>
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/img14.png">
+    </div>
+</div>
+<div class="pictorial center">
+    <div class="pictorial_img">
+        <img src="./img/img15.png">
     </div>
 </div>
