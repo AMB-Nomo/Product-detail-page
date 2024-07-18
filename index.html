@@ -146,7 +146,7 @@
     /* CSS */
 
     .pc {
-        display: none;
+        display: block;
     }
 
     .mo {
@@ -872,9 +872,22 @@
 
     }
 
+    .slide1 {
+        background-color: #E8E8E8;
+        gap: 40px;
+    }
+
     /* mobile */
 
     @media screen and (max-width: 859px) {
+        .pc {
+            display: none;
+        }
+
+        .mo {
+            display: block;
+        }
+
         .m_mt40 {
             margin-top: 40px !important;
         }
@@ -967,6 +980,10 @@
             margin-bottom: 20px !important;
         }
 
+        .m_mb10 {
+            margin-bottom: 10px !important;
+        }
+
         .ingred_tittle {
             font-size: 24px;
             gap: 10px;
@@ -1016,6 +1033,10 @@
             width: 75% !important;
         }
 
+        .fs_30 {
+            font-size: 14px;
+        }
+
         .l_ss {
             line-height: normal;
         }
@@ -1058,8 +1079,57 @@
 
         .kaist {
             gap: 10px;
-            padding:0 50px;
+            padding: 0 50px;
+        }
 
+        .info_prd {
+            gap: unset;
+            padding: 10% 10% 10% 10%;
+        }
+
+        .info_prd .pictorial_img {
+            width: 100%;
+        }
+
+        .info_prd .pictorial_img img {
+            object-fit: cover;
+        }
+
+        .info_prd .cus_size_mb {
+            line-height: 20px;
+            font-size: 8px !important;
+            letter-spacing: normal;
+        }
+
+        .info_prd .ls_m1 {
+            letter-spacing: normal;
+            font-size: 7px;
+        }
+
+        .pictorial_contents.ph {
+            font-size: 14px;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .pictorial_contents .cus_size_mb {
+            font-size: 8px;
+        }
+
+        .pictorial .fc_main3 {
+            letter-spacing: -1.5px;
+        }
+        .slide1{
+            gap: 20px;
+        }
+        .slide1 .pictorial_img{
+            width: 30%;
+        }
+        .slide1 .dds_img{
+            width: 70%;
+        }
+        .slide1 .fs_note2{
+            font-size: 7px;
         }
     }
 </style>
@@ -1266,7 +1336,7 @@
         <img src="./img/prd_cont_1.png">
     </div>
     <div>
-        <p class="fs_xs ls_m2 l_s fw600 fc_main3 center mb20">
+        <p class="fs_xs ls_m2 l_s fw600 fc_main3 center mb20 m_mb10">
             모드림 그래핀 샴푸의 특허 받은
             <br>탈모 케어 성분
         </p>
@@ -1281,7 +1351,7 @@
             <img src="./img/prd_cont_2.png">
         </div>
         <div>
-            <p class="fs_xs ls_m2 l_s fw600 fc_white center mb20" style="font-size: 22px;">
+            <p class="ls_m2 l_s fw600 fc_white center mb20 cus_size_mb m_mb10" style="font-size: 22px;">
                 모드림 그래핀 샴푸만의 특허 받은 카페인 성분
             </p>
             <div class="pictorial_img">
@@ -1289,13 +1359,22 @@
             </div>
         </div>
     </div>
-    <p class="fs_note ls_m1">
+    <p class="fs_note ls_m1 pc">
         카페인을 이중층 구조의 양이온성을 갖는 양이온/음이온 계면활성제 혼합 베시클 내로 포집시킴으로써 이를 함유하는 모발용
         <br>조성물이 두피 자극은 없으면서 탈모 완화 및 모발 성장 효과를 증진하는 것을 발견하고 본 발명을 특허로 인증 받음.
     </p>
-    <p class="fs_note2 ls_m1">
+    <p class="fs_note2 ls_m1 pc">
         따라서 본 발명의 목적은 탈모 완화 및 모발 성장을 위한 모발용 조성물을 제공하는 것이다.
     </p>
+    <div class="mo">
+        <p class="fs_note ls_m1 m_mb10 m_mt20">
+            카페인을 이중층 구조의 양이온성을 갖는 양이온/음이온 계면활성제 혼합 베시클 내로 포집시킴으로써 이를 함유하는 모발용
+            <br class="pc">조성물이 두피 자극은 없으면서 탈모 완화 및 모발 성장 효과를 증진하는 것을 발견하고 본 발명을 특허로 인증 받음.
+        </p>
+        <p class="fs_note2 ls_m1 m_mb40">
+            따라서 본 발명의 목적은 탈모 완화 및 모발 성장을 위한 모발용 조성물을 제공하는 것이다.
+        </p>
+    </div>
 </div>
 <div class="pictorial center">
     <div class="pictorial_img">
@@ -1306,7 +1385,7 @@
             모드림 그래핀 샴푸는 <span class="fc_main2">pH6의 약산성</span>
             <br>저자극 모발 보호 샴푸
         </p>
-        <p>
+        <p class="cus_size_mb">
             외부 요인과 스트레스, 잦은 시술로 알칼리화되어 있는 모발과
             <br>두피를 pH5~6도의 약산성 상태로 유지해 주는 저자극 모발 보
             <br>호 샴푸이기 때문에 손상된 모발이나 민감한 피부에도 자극없
@@ -1314,7 +1393,7 @@
         </p>
     </div>
 </div>
-<div class="pictorial center column p3" style="background-color: #E8E8E8; gap: 40px;">
+<div class="pictorial slide1 center column p3">
     <P class="fc_main3 fs_ss ls_m2">
         약물전달 매개물질 “Nano Graphene”
         <BR>DDS (Drug Delivery System) Tech.
@@ -1322,7 +1401,7 @@
     <div class="pictorial_img">
         <img src="./img/kaist.png">
     </div>
-    <div class="pictorial_img">
+    <div class="pictorial_img dds_img">
         <img src="./img/img3.png">
     </div>
     <p class="fs_note2" style="color: #9AACBE;">
